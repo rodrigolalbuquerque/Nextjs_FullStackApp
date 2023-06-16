@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.top {
+    display: flex;
+    gap: 20px;
+}
+
+.info, .imageContainer {
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.infoTitle {
+    font-size: 32px;
+}
+
+.infoDesc {
+    font-size: 16px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+}
