@@ -6,18 +6,18 @@ import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
-async function getData(id) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
-    cache: 'no-store'
-  })
+// async function getData(id) {
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+//     cache: 'no-store'
+//   })
 
-  if (!res.ok) {
-    // throw new Error('Failed to fetch data') or
-    return notFound()
-  }
+//   if (!res.ok) {
+//     // throw new Error('Failed to fetch data') or
+//     return notFound()
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
 function Dashboard() {
   // const [data, setData] = useState([]);
@@ -97,6 +97,8 @@ function Dashboard() {
                 <Image
                   src={post.img}
                   alt={''}
+                  width={200}
+                  height={200}
                 />
               </div>
               <h2 className={styles.postTitle}>{post.title}</h2>

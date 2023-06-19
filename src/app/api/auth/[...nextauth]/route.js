@@ -34,7 +34,7 @@ const handler = NextAuth({
                 throw new Error("Wrong credentials!")
               }
           } else {
-            throw new Error("User not found!")
+            throw new Error("Wrong credentials!")
           }
         } catch (err) {
           throw new Error(err)
